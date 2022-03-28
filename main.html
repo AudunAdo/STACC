@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <title>KYC</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+    <main>
+        <h1>KYC - PEP checker</h1>
+        <hr>
+        <section>
+            <h2>Select what you would like to search for:</h2>
+            <select id="search-group">
+                <option value="person">Person</option>
+                <option value="organization">Organization</option>
+            </select>
+            <hr>
+            <h2>Enter your search:</h2>
+            <div class="search">
+                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.4517 8.07871C15.4517 11.9712 12.2337 15.1574 8.22587 15.1574C4.21804 15.1574 1 11.9712 1 8.07871C1 4.18619 4.21804 1 8.22587 1C12.2337 1 15.4517 4.18619 15.4517 8.07871Z"/>
+                    <path d="M12.5164 12.9729L21.1526 21.9279"/>
+                </svg>
+                <input type="search" id="search">
+            </div>
+        </section>
+        <hr>
+        <section id="expose-message" class="hidden">
+            <h2>&checkmark; Politically exposure detected</h2>
+            <blockquote>
+                This client is politically exposed according to opensanctions.org. Offering a loan to them will require manual authorization. Contact your supervisor for further information.
+            </blockquote>
+        </section>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
