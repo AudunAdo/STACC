@@ -4,22 +4,22 @@ const group = document.getElementById("search-group");
 
 const messages = {
     exposedPerson: {
-        title: "⨯ Politically exposure detected",
+        title: "⨯ Political exposure detected",
         description:"This client is politically exposed according to opensanctions.org. Offering a loan to them will require manual authorization. Contact your supervisor for further information.",
         isExposed: true
     },
     exposedOrganization: {
-        title: "⨯ Politically exposure detected",
+        title: "⨯ Political exposure detected",
         description:"This company has politically exposed members according to Brønnøysundregisteret and opensanctions.org. Offering a loan to them will require manual authorization. Contact your supervisor for further information.",
         isExposed:true
     },
     notExposedPerson: {
-        title: "✓ Politically exposure detected",
+        title: "✓ No exposure detected",
         description:"This client is not politically exposed.",
         isExposed:false
     },
     notExposedOrganization: {
-        title: "✓ Politically exposure detected",
+        title: "✓ Political exposure detected",
         description:"This organization is not politically exposed.",
         isExposed:false
     }
